@@ -49,6 +49,8 @@ function validateInput(emailAddress) {
         .classList.add("opacity-100", "scale-100");
 
       document.querySelector(".js-main").classList.add("opacity-0");
+
+      document.querySelector(".js-error-display").innerText = "";
     } else {
       inputErrorDisplay("Valid email required");
     }
