@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-custom-Red: hsl(4, 100%, 67%);
+  --color-custom-Blue800: hsl(234, 29%, 20%);
+  --color-custom-Blue700: hsl(235, 18%, 26%);
+  --color-custom-Grey: hsl(0, 0%, 58%);
+  --color-custom-White: hsl(0, 0%, 100%);
+
+  --font-Roboto: "Roboto", serif;
+}
+
+.button-component {
+  @apply md:hover:shadow-custom-Red bg-custom-Blue800 mt-5 w-full cursor-pointer rounded-md from-[#ff5379] to-[#ff693e] p-4 text-sm text-white md:hover:bg-linear-to-r md:hover:shadow-2xl;
+}

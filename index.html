@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body
+    class="md:bg-custom-Blue700 font-Roboto relative flex min-h-screen items-center justify-center bg-white"
+  >
+    <main
+      class="js-main w-full max-w-4xl transition-opacity duration-300 ease-in-out"
+    >
+      <div class="gap-8 bg-white md:flex md:rounded-4xl md:p-8">
+        <div class="order-last">
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+            class="hidden md:block"
+          />
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+            class="w-full md:hidden"
+          />
+        </div>
+
+        <div class="mx-auto my-auto p-4">
+          <h1 class="text-custom-Blue800 text-4xl font-bold md:text-5xl">
+            Stay updated!
+          </h1>
+
+          <p class="text-custom-Blue700 my-4 text-sm">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="text-custom-Blue700 my-8 space-y-3 text-sm">
+            <li class="flex gap-4">
+              <img src="assets/images/icon-list.svg" alt="" class="" />
+              Product discovery and building what matters
+            </li>
+
+            <li class="flex gap-4">
+              <img src="assets/images/icon-list.svg" alt="" />
+              Measuring to ensure updates are a success
+            </li>
+
+            <li class="flex gap-4">
+              <img src="assets/images/icon-list.svg" alt="" />
+              And much more!
+            </li>
+          </ul>
+
+          <div class="my-1 flex items-center justify-between">
+            <p class="text-custom-Blue800 text-xs font-extrabold">
+              Email address
+            </p>
+
+            <p
+              class="text-custom-Red js-error-display text-xs font-extrabold"
+            ></p>
+          </div>
+
+          <input
+            type="text"
+            autocomplete="off"
+            placeholder="email@company.com"
+            class="text-custom-Blue800 placeholder:text-custom-Grey js-input ring-custom-Grey w-full rounded-md p-4 text-sm ring-1"
+          />
+          <button class="button-component js-subscribe">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Pop up window -->
+    <div
+      class="js-popup absolute scale-0 opacity-0 transition-all duration-300 ease-in-out"
+    >
+      <div
+        class="mx-auto flex min-h-screen w-9/10 flex-col justify-between bg-white py-8 md:min-h-auto md:max-w-md md:rounded-4xl md:p-8"
+      >
+        <div>
+          <img src="assets/images/icon-success.svg" alt="" />
+
+          <h1 class="text-custom-Blue800 my-8 text-4xl font-bold">
+            Thanks for subscribing!
+          </h1>
+
+          <p class="text-custom-Blue700 text-sm">
+            A confirmation email has been sent to
+            <span class="js-email-address text-sm font-extrabold"></span>.
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+
+        <div>
+          <button class="button-component js-dismiss-btn">
+            Dismiss message
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
