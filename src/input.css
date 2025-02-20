@@ -12,5 +12,5 @@
 }
 
 .button-component {
-  @apply md:hover:shadow-custom-Red bg-custom-Blue800 mt-5 w-full cursor-pointer rounded-md from-[#ff5379] to-[#ff693e] p-4 text-sm text-white md:hover:bg-linear-to-r md:hover:shadow-2xl;
+  @apply md:hover:shadow-custom-Red bg-custom-Blue800 mt-5 w-full cursor-pointer rounded-md from-[#ff5379] to-[#ff693e] p-4 text-sm font-bold text-white md:hover:bg-linear-to-r md:hover:shadow-2xl;
 }
